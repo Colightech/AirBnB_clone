@@ -14,27 +14,25 @@ from models.review import Review
 
 
 def parse(arg):
-    curly_braces = re.search(r"\{(.*?)\}", arg)
-    brackets = re.search(r"\[(.*?)\]", arg)
-    if curly_braces is None:
-        if brackets is None:
-            return [i.strip(",") for i in split(arg)]
+    curly_brace = re.search(r"\{(.*?)\}", arg)
+    square_bracket = re.search(r"\[(.*?)\]", arg)
+    if curly_brace is None:
+        if square_bracket is None:
+            return [x.strip(",") for x in split(arg)]
         else:
-            lexer = split(arg[:brackets.span()[0]])
-            retl = [i.strip(",") for i in lexer]
-            retl.append(brackets.group())
-            return retl
+            token = split(arg[:square_bracket.span()[0]])
+            remove_commas = [x.strip(",") for x in token]
+            remove_commas.append(square_bracket.group())
+            return remove_commas
     else:
-        lexer = split(arg[:curly_braces.span()[0]])
-        retl = [i.strip(",") for i in lexer]
-        retl.append(curly_braces.group())
-        return retl
+        token = split(arg[:curly_brace.span()[0]])
+        remove_commas = [x.strip(",") for x in token]
+        remove_commas.append(curly_brace.group())
+        return remove_commas
 
 
 class HBNBCommand(cmd.Cmd):
-    """Defines the HolbertonBnB command interpreter.
-
-    Attributes:
+    """AlxBnB command interpreter.
         prompt (str): The command prompt.
     """
 
