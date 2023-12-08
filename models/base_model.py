@@ -9,7 +9,7 @@ class BaseModel:
     """ this class is the base class and it
     defines all common attributes/methods for other classes"""
 
-    def __init__(self, *args, kwargs):
+    def __init__(self, *args, **kwargs):
         """the init method of the base class"""
 
         time_format = "%Y-%m-%dT%H:%M:%S.%f"
@@ -30,13 +30,13 @@ class BaseModel:
     def save(self):
         """this method updates the public instance
         attribute updated_at with the current datetime"""
-        self.updated_at = datetime.today
+        self.updated_at = datetime.today()
         models.storage.save()
 
     def to_dict(self):
         """this method returns a dictionary containing all 
         keys/values of __dict__ of the instance"""
-        dict_copy = self.__dict__.copy
+        dict_copy = self.__dict__.copy()
         dict_copy["created_at"] = self.created_at.isoformat()
         dict_copy["updated_at"] = self.updated_at.isoformat()
         dict_copy["__class__"] = self.__class__.__name__
