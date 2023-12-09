@@ -34,7 +34,7 @@ class BaseModel:
         models.storage.save()
 
     def to_dict(self):
-        """this method returns a dictionary containing all 
+        """this method returns a dictionary containing all
         keys/values of __dict__ of the instance"""
         dict_copy = self.__dict__.copy()
         dict_copy["created_at"] = self.created_at.isoformat()

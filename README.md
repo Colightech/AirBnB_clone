@@ -1,31 +1,35 @@
 # AirBnB Clone - The Console
 
-## Project Overview
+# Project Overview
 
-Welcome to the AirBnB clone project! This project focuses on building a command-line interface to manage AirBnB objects, laying the foundation for subsequent tasks like HTML/CSS templating, database storage, API, and front-end integration.
+Welcome to the AirBnB clone project! This
+project focuses on building a command-line
+interface to manage AirBnB objects, laying
+the foundation for subsequent tasks like
+HTML/CSS templating, database storage, API,
+and front-end integration.
 
-## Project Details
+# Project Details
 
-- **Author:** Guillaume
-- **Weight:** 5
-- **Start Date:** Dec 4, 2023, 6:00 AM
-- **End Date:** Dec 11, 2023, 6:00 AM
-- **Checker Release Date:** Dec 9, 2023, 12:00 PM
+- **Author: ** Guillaume
+- **Weight: ** 5
+- **Start Date: ** Dec 4, 2023, 6 : 00 AM
+- **End Date: ** Dec 11, 2023, 6 : 00 AM
+- **Checker Release Date: ** Dec 9, 2023, 12:00 PM
 
-## Concepts and Learning Objectives
+# Concepts and Learning Objectives
 
-### Concepts Explored
+# Concepts Explored
 
 - Python packages
 - AirBnB clone
 - Command interpreter
 - Serialization and deserialization
-- Abstracted storage engine (File storage)
+- Abstracted storage engine(File storage)
 - Unit testing
 
-### Learning Objectives
+# Learning Objectives
 
-By the end of this project, you should be able to:
 
 - Create a Python package
 - Develop a command interpreter using the cmd module
@@ -36,36 +40,36 @@ By the end of this project, you should be able to:
 - Understand UUID, *args, and **kwargs
 - Handle named arguments in a function
 
-## Requirements
+# Requirements
 
-### Python Scripts
+# Python Scripts
 
-- **Allowed Editors:** vi, vim, emacs
-- **Python Version:** 3.8.5
+- **Allowed Editors: ** vi, vim, emacs
+- **Python Version: ** 3.8.5
 - **Execution Environment:** Ubuntu 20.04 LTS
-- **Code Style:** Pycodestyle (version 2.8.*)
+- **Code Style: ** Pycodestyle(version 2.8.*)
 
-### AUTHORS
+# AUTHORS
 
 - Chris Johnson Ighodaro
 - Delsa Marasha
 
-## How to Use
+# How to Use
 
-### Interactive Mode
+# Interactive Models
 
-```bash
-$ ./console.py
 (hbnb) help
-Documented commands (type help <topic>):
+Documented commands(type help < topic >):
+
 ========================================
-EOF  help  quit
 
-(hbnb)
-(hbnb)
-(hbnb) quit
+	EOF  help  quit
 
-### Non-Interactive Mode
+	(hbnb)
+	(hbnb)
+	(hbnb) quit
+
+# Non-Interactive Mode
 
 $ echo "help" | ./console.py
 (hbnb)
@@ -80,11 +84,13 @@ $
 $ cat test_help | ./console.py
 (hbnb)
 Documented commands (type help <topic>):
+
 ========================================
-EOF  help  quit
-(hbnb)
-$
 
-### Running Test
+	EOF  help  quit
+	(hbnb)
+	$
 
-$ echo "python3 -m unittest 
+# Running Test
+
+$ echo "python3 -m unittest
