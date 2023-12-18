@@ -48,7 +48,7 @@
 
 .popover{
     position: absolute;
-    margin-top: 70px;
+    margin-top: 72px;
     background:  #FAFAFA;
     width: 84%;
     display: none;
@@ -56,14 +56,17 @@
 .popover li{
     margin-left: 32px;
     list-style: none;
+    margin-bottom: 2px;
 }
 .locations:hover .popover,
 .amenities:hover .popover{
     display: block;
 }
-.popover ul li{
-    margin-left: 0;
-}
 .popover h2{
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+.popover li:last-child{
+    margin-bottom: 20px;
 }
