@@ -10,175 +10,201 @@
     <link rel="stylesheet" href="styles/6-filters.css">
     <link rel="stylesheet" href="styles/100-places.css">
     <title>AirBnB clone</title>
-  </head>
-  <body>
-    <header>
-    </header>
-    <div class="container">
-      <section class="filters">
+</head>
+<body>
+<header>
+    <a href="#"></a>
+</header>
+
+<div class="container">
+    <section class="filters">
+        <button type="button">Search</button>
         <div class="locations">
-          <h3>States</h3>
-          <h4>California, Arizona...</h4>
-          <ul class="popover">
-            <li><h2>Arizona:</h2>
-              <ul>
-                <li>Page</li>
-                <li>Page2</li>
-              </ul>
-            </li>
-            <li><h2>California:</h2>
-              <ul>
-                <li>San Francisco</li>
-                <li>Los Altos</li>
-              </ul>
-            </li>
+            <h3>States</h3>
+            <h4>Lagos, Benin...</h4>
+            <ul class="popover">
+                <li><h2>Lagos</h2>
+                    <li>Lekki</li>
+                    <li>Surulere</li>
+                </li>
+                 <li><h2>Benin</h2>
+                    <li>Ikpoba Hill</li>
+                    <li>Ring Road</li>
+                </li>
             </ul>
         </div>
+
         <div class="amenities">
-          <h3>Amenities</h3>
-          <h4>Internet, Kitchen...</h4>
-          <ul class="popover">
-            <li>Internet</li>
-            <li>Tv</li>
-            <li>Kitchen</li>
-            <li>Iron</li>
-          </ul>
+            <h3>Amenities</h3>
+            <h4>Good Road, Electricity...</h4>
+            <ul class="popover">
+                <li><h2>Good Road</h2>
+                    <li>Ikpoba Hill</li>
+                    <li>Ring Road</li>
+                </li>
+                 <li><h2>Electricity</h2>
+                    <li>Phcn</li>
+                    <li>Generators</li>
+                </li>
+            </ul>
         </div>
-        <button type="button" name="button">Search</button>
-      </section> <!-- end fiter-->
+    </section>
+    <!-----------------------END OF TASK 6---------------------->
+    <section class="places">
+        <div class="places_title">
+            <h1>places</h1>
+        </div>
+        <div class="articles">
+            <article>
+                <div class="name_price">
+                    <h2>My Home</h2>
+                    <div class="price_by_night">
+                        <p>$80</p>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="max_guest">
+                        <p>3 guest</p>
+                    </div>
+                    <div class="number_rooms">
+                        <p>1 Bebroom</p>
+                    </div>
+                    <div class="number_bathrooms">
+                        <p>1 Bathroom</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <p><b>Owner:</b>Chris Johnson</p>
+                </div>
+                <div class="description">
+                    <p>There are 82,690 available flats, houses, land and 
+                        commercial property in Lagos, Nigeria. The property 
+                        have been listed by estate agents who can be contacted.
+                    </p>
+                </div>
+                <div class="amenities2">
+                    <h2>Amenities</h2>
 
-      <section class="places">
-        <h1>Places</h1>
-        <article><!-- My home -->
-          <div class="article_places_header">
-            <h2>My home</h2>
-            <div class="price_by_night">$80</div>
-          </div>
-          <div class="information">
-            <div class="max_guest">2 Guests</div>
-            <div class="number_rooms">1 Bedroom</div>
-            <div class="number_bathrooms">1 Bathroom</div>
-          </div><!-- end information -->
-          <div class="user">
-            <p><b>Owner:</b> John Lennon</p>
-          </div><!-- end user -->
-          <div class="description">
-            <p>This is a lovely 1 bathroom apartament that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, 3 stops to Jungan Temle.</p>
-          </div><!-- end description -->
-          <div class="amenities">
-            <h2>Amenities</h2>
-            <ul>
-              <li>
-                <div class="places_amenities_pet_friendly"></div>
-                Pet friendly
-            </li>
-              <li>
-                <div class="places_amenities_tv"></div>
-                Tv
-            </li>
-              <li>
-                <div class="places_amenities_wifi"></div>
-                Wifi
-            </li>
-            </ul>
-          </div>
-          <div class="reviews">
-            <h2>2 Reviews</h2>
-            <ul>
-              <li>
-                <h3>From Bob Dylan the 27th August 2022</h3>
-                <p>Runshi is an epic host. Nothing more i can say. 5 star!</p>
-              </li>
-              <li>
-                <h3>From Connor 4th August 2022</h3>
-                <p>Higly recommended!</p>
-              </li>
-            </ul>
-          </div>
-        </article><!-- end My home -->
+                    <div class="tv">
+                        <p>Tv</p>
+                    </div>
+                    <div class="wifi">
+                        <p>WiFi</p>
+                    </div>
+                    <div class="pet">
+                         <p>Pet Friendly</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <h2>2 Reviews</h2>
+                    <div>
+                        <p><b>From Bob Dylan the 27th January 2017</b>
+                        <br>Eko hotel is one of the best ever, 5 star</p>
+                    </div>
 
-        <article>
-          <h2>Tiny house</h2>
-          <div class="price_by_night">$65</div>
-          <div class="information">
-            <div class="max_guest">4 Guests</div>
-            <div class="number_rooms">2 Bedrooms</div>
-            <div class="number_bathrooms">1 Bathroom</div>
-          </div><!-- end information -->
-          <div class="user">
-            <p><b>Owner:</b> Addrienne</p>
-          </div><!-- end user -->
-          <div class="description">
-            <p>Our place is a privete, afffordable satan-alone guest house centrally located just minutes to French Quarters, downtown th Fair Grounds (Jazz Fest) and City Park. The guest house is a quaint, 400 suare ft. with a full bath, mini kitchen, & livin room. The extra high cellings make the home feel more spacious. The sofa converts to bed also. We have a hand made counter area that adds character to the room and a great porch/deck to relax on and have a glass of Merlot.</p>
-          </div><!-- end description -->
-          <div class="amenities">
-            <h2>Amenities</h2>
-            <ul>
-              <li>
-                <div class="places_amenities_pet_friendly"></div>
-                Pet friendly
-            </li>
-            </ul>
-          </div>
-          <div class="reviews">
-            <h2>1 Review</h2>
-            <ul>
-              <li>
-                <h3>From Max the 15th August 2022</h3>
-                <p>Runshi is an epic host. Nothing more i can say. 5 star!</p>
-              </li>
-              <li>
-                <h3>From Connor 4th August 2022</h3>
-                <p>Higly recommended!</p>
-              </li>
-            </ul>
-          </div>
-        </article>
-        <article>
-          <h2>A suite</h2>
-          <div class="price_by_night">$190</div>
-          <div class="information">
-            <div class="max_guest">5 Guests</div>
-            <div class="number_rooms">3 Bedroom</div>
-            <div class="number_bathrooms">2 Bathroom</div>
-          </div><!-- end information -->
-          <div class="user">
-            <p><b>Owner:</b> Mick Jagger</p>
-          </div><!-- end user -->
-          <div class="description">
-            <p>First loft built by Holbies. It contains a decked terrace, jacuzzi, firepit, rabbits garden, two rooms, two balconies, entrance gate, private garden, private parking, BBQ area, AC in each bedroom, technological equipment, luxury beds, and mountain views. Ideal for architecture lovers, romantic dates, or having a good time. It is a unique space of his kind. Only pets that do not harm rabbits are allowed.</p>
-          </div><!-- end description -->
-          <div class="amenities">
-            <h2>Amenities</h2>
-            <ul>
-              <li>
-                <div class="places_amenities_pet_friendly"></div>
-                Pet friendly
-            </li>
-              <li>
-                <div class="places_amenities_tv"></div>
-                Tv
-            </li>
-              <li>
-                <div class="places_amenities_wifi"></div>
-                Wifi
-            </li>
-            </ul>
-          </div>
-          <div class="reviews">
-            <h2>1 Review</h2>
-            <ul>
-              <li>
-                <h3>From Ayomide Suara the 15th August, 2022</h3>
-                <p>I love this place. Amazing!</p>
-              </li>
-            </ul>
-          </div>
-        </article>
-        </section> <!-- end section -->
-    </div>
-    <footer>
-      <p>Best School</p>
-    </footer>
-  </body>
+                    <div>
+                        <p><b>From Bob Dylan the 16th January 2017</b>
+                        <br>Highly recommended</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="name_price">
+                    <h2>Tiny Home</h2>
+                    <div class="price_by_night">
+                        <p>$85</p>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="max_guest">
+                        <p>3 guest</p>
+                    </div>
+                    <div class="number_rooms">
+                        <p>1 Bebroom</p>
+                    </div>
+                    <div class="number_bathrooms">
+                        <p>1 Bathroom</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <p><b>Owner:</b>Faith Ochigbo</p>
+                </div>
+                <div class="description">
+                    <p>There are 82,690 available flats, houses, land and 
+                        commercial property in Lagos, Nigeria. The property 
+                        have been listed by estate agents who can be contacted.
+                    </p>
+                </div>
+                <div class="amenities2">
+                    <h2>Amenities</h2>
+                    <div class="pet">
+                        <p>Pet Friendly</p>
+                   </div>
+                   <div class="tv">
+                        <p>Tv</p>
+                   </div>
+                </div>
+                <div class="review">
+                    <h2>2 Reviews</h2>
+                    <div>
+                        <p><b>From Dav John the 19th January 2017</b>
+                        <br>Golf Lounge is one of the best ever, 4 star hotel.
+                        Contrary to the false notion that Tinubu and Lagos State
+                        government built Eko Atlantic City, the city us actually 
+                        owned and financed by a private firm owned by a Lebanese 
+                        investor called Gilbert Chagoury. He's also the owner 
+                        of Eko hotels and suites</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="name_price">
+                    <h2>A Suite</h2>
+                    <div class="price_by_night">
+                        <p>$190</p>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="max_guest">
+                        <p>3 guest</p>
+                    </div>
+                    <div class="number_rooms">
+                        <p>1 Bebroom</p>
+                    </div>
+                    <div class="number_bathrooms">
+                        <p>1 Bathroom</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <p><b>Owner:</b>Daniel Josiah</p>
+                </div>
+                <div class="description">
+                    <p>There are 82,690 available flats, houses, land and 
+                        commercial property in Lagos, Nigeria. The property 
+                        have been listed by estate agents who can be contacted.
+                    </p>
+                </div>
+                <div class="amenities2">
+                    <h2>Amenities</h2>
+                    <div class="wifi">
+                        <p>WiFi</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <h2>1 Reviews</h2>
+                    <div>
+                        <p><b>From Max Johnson the 20th January 2017</b>
+                        <br>Victoria island suit is one of the best ever, 5 star hotel.
+                        A wonderful mini resort for friends and lovers. Access to the gym, 
+                        pool, and many other fun activities while lodged there. 
+                        There's a club, a restaurant on the .</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+</div>
+
+<footer>Best School</footer>
+</body>
 </html>
